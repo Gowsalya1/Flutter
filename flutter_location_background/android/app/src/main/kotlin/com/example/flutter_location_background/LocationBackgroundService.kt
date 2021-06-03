@@ -98,8 +98,8 @@ class LocationBackgroundService : Service(), LocationListener {
     override fun onCreate() {
         super.onCreate()
         mLocationRequest = LocationRequest()
-        mLocationRequest.interval = 3000 // 3 seconds
-        mLocationRequest.fastestInterval = 3000 // 3 seconds
+        mLocationRequest.interval = 1000 // 1 second
+        mLocationRequest.fastestInterval = 1000 // 1 second
         mLocationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
         val builder = LocationSettingsRequest.Builder()
                 .addLocationRequest(mLocationRequest)
